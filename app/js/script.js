@@ -12,31 +12,46 @@ if(menuContent){
 }
 // delet_div
 let next = document.getElementById('btn-next');
-console.log(next)
-
 let previous = document.getElementById('btn_previous');
-console.log(previous)
-
 let slider = document.querySelector('.slider_display');
-
+let index = -1;
+  
 const sliderBox = [];
-console.log(sliderBox)
 
 const sliderDisplay = () => {
     for (let i = 0; i < slider.children.length; i++) {
-        sliders = slider.children[i];
+      let sliders = slider.children[i];
         sliderBox.push(sliders);
-        // sliderbox.classList.add('delet_div');
     }
-    
 }
 sliderDisplay();
 
-next.addEventListener("click", function (e) {
-    for (let i = 4; i > sliderBox.length; ++i) {
-        let sliderBoxI = sliderBox[i]; 
-         sliderBoxI.classList.add('delet_div');
-         console.log(sliderBoxI);
-     }
-});
-console.log(sliderBox)
+const nextSlide = () => {
+    
+    index ++;
+    console.log(index)
+    sliderBox[index].classList.add('delet_div');
+    previous.classList.remove('delet_div');
+    next.classList.remove('active');
+    console.log(sliderBox[index])
+
+    if(index === (sliderBox.length - 1)){
+        next.classList.add('delet_div');
+    }
+};
+
+const backSlide = () => {
+    next.classList.remove('delet_div');
+    index --;
+    console.log(index)
+    sliderBox[index].classList.remove('delet_div');
+    console.log(sliderBox[index])
+
+    if(index === 0){
+        next.classList.add('active');
+        previous.classList.add('delet_div');
+    }
+};
+
+next.addEventListener('click',nextSlide);
+previous.addEventListener(('click'),backSlide);
