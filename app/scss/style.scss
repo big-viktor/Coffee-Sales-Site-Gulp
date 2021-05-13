@@ -1,0 +1,23 @@
+@import "header.scss";
+@import "footer.scss";
+@import "content.scss";
+@import "slider.scss";
+@import "sampleCoffee.scss";
+
+
+
+body{
+}
+.wraper{
+    padding-top: 100px;
+    width: 1400px;
+    overflow: hidden;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    
+}
+._container{
+    display: flex;
+    flex-direction: column;
+}

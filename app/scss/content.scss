@@ -1,0 +1,58 @@
+
+.content-img{
+    padding-top: 70px;
+    display: flex;
+    justify-content: center;
+}
+
+.content_text1{
+    font-family: Nunito;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 24px;
+    text-align: center;
+    color: #415167;
+    margin: 0px;
+}
+.content_text3{
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 30px;
+    line-height: 34px;
+    color: #415167;
+    margin: 0px;
+    text-align: center;
+}
+.container_img{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 200px;
+    height: 245px;
+    padding-right: 60px;
+}
+.foto_content{
+    width: 80px;
+    height: 80px;
+}
+.title_icon{
+    font-family: Nunito;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 28px;
+    color: #232C38;
+    text-align: center;
+}
+.tetx_icon{
+    font-family: Nunito;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 22px;
+    text-align: center;
+    color: #151D28;
+    
+}
