@@ -86,7 +86,6 @@ i {
 }
 
 .following_slider{
-    
     width: 40px;
     height: 40px;
     border: none;
@@ -99,4 +98,8 @@ i {
 }
 .delet_div{
     display: none;
+}
+.sliders{
+    display: flex;
+    flex-direction: row;
 }

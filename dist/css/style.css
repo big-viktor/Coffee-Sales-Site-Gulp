@@ -354,6 +354,16 @@ i {
   display: none;
 }
 
+.sliders {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
 .container_sample {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -454,6 +464,9 @@ i {
 }
 
 .delet_div {
+  -webkit-transition: 20s;
+  -o-transition: 20s;
+  transition: 20s;
   display: none;
 }
 
