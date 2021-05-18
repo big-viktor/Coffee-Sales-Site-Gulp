@@ -1,29 +1,26 @@
 
 .header_conteiner{
-  width: 1400px;
+  max-width: 1400px;
   margin: 0 auto;
   overflow: hidden;
   display: flex;
   justify-content: flex-end;
 }
 .content_logo{
-  width: 390px;
+  width: 31%;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
 }
 .logo_foto{
   padding-left: 150px;
-  width: 124px;
-  height: 40px;
+  max-width: 30%;
 }
 .header_foto{
-width: 690px;
-height: 760px;
-opacity: 0.8;
+  width: 100%;
+  opacity: 0.8;
 }
 .content_text_logo{
-  width: 500px;
   position: relative;
   left: 150px;
   z-index: 2;
@@ -43,23 +40,23 @@ opacity: 0.8;
   font-style: normal;
   font-weight: 900;
   font-size: 54px;
-  line-height: 70px;
   color: #F9FBFF;
   background: #C7A17A;
   z-index: 2;
 }
 .basket{
-width: 28px;
-height: 20px;
-transform: matrix(-1, 0, 0, 1, 0, 0);
+  padding-top: 40px;
+  width: 10%;
+  transform: matrix(-1, 0, 0, 1, 0, 0);
 }
+
 .menu_content{
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: flex-start;
+  width: 40%;
   padding-left: 60px;
-  padding-right: 90px;
   background: rgba(65, 81, 103, 1);
   
 }
@@ -73,35 +70,177 @@ transform: matrix(-1, 0, 0, 1, 0, 0);
   line-height: 22px;
   color: #EDF0F5;
   }
-@media(max-width: 1410px) {
-
-  .header_conteiner{
-      max-width: 1300px;
+@media (max-width: 1210px) {
+  
+.header_conteiner{
+  max-width: 1400px;
+  margin: 0 auto;
+  overflow: hidden;
+  display: flex;
+  justify-content: flex-end;
+  a{
+    font-size: 12px;
   }
-}
-@media(max-width: 1015px) {
-
-  .header_conteiner{
-      max-width: 850px;
+  p{
+    font-size: 35px;
   }
-}
-@media(max-width: 770px) {
-
-  .header_conteiner{
-      max-width: 550px;
-  }
-}
-@media(max-width: 550px) {
-    .header_conteiner{
-        max-width: 450px;
-
+  .header_menu{
+    text-decoration:none;
+    padding: 20px 30px 20px 0px;
+    font-family: Nunito;
+    font-style: normal;
+    font-weight: bold;
+    line-height: 22px;
+    color: #EDF0F5;
     }
+    
 }
-@media(max-width: 420px) {
-    .header_conteiner{
-        max-width: 200px;
+.logo_foto{
+  padding-left: 120px;
+  max-width: 30%;
+}
+.content_text_logo{
+  position: relative;
+  left: 110px;
+  z-index: 2;
+}
+   
+}
+
+@media (max-width: 922px) {
+  .header_conteiner{
+    margin: 0 auto;
+    overflow: hidden;
+    display: flex;
+    justify-content: flex-end;
+    a{
+      font-size: 8px;
     }
+    p{
+      font-size: 30px;
+    }
+    .header_menu{
+      text-decoration:none;
+      padding: 20px 30px 10px 0px;
+      font-family: Nunito;
+      font-style: normal;
+      font-weight: bold;
+      line-height: 22px;
+      color: #EDF0F5;
+      }
+  }
+  .logo_foto{
+    padding-left: 90px;
+    max-width: 30%;
+  }
+  .content_text_logo{
+    position: relative;
+    left: 80px;
+    z-index: 2;
+  }
 }
+
+
+/* Landscape phones and portrait tablets */
+@media (max-width: 690px) {
+  .header_conteiner{
+    margin: 0 auto;
+    overflow: hidden;
+    display: flex;
+    justify-content: flex-end;
+    a{
+      font-size: 8px;
+    }
+    p{
+      font-size: 25px;
+    }
+    .header_menu{
+      text-decoration:none;
+      padding: 20px 30px 10px 0px;
+      font-family: Nunito;
+      font-style: normal;
+      font-weight: bold;
+      line-height: 22px;
+      color: #EDF0F5;
+      }
+  }
+  .logo_foto{
+    padding-left: 40px;
+    max-width: 30%;
+  }
+  .content_text_logo{
+    position: relative;
+    left: 40px;
+    z-index: 2;
+  }
+}
+
+/* Portrait phones and smaller */
+@media (max-width: 480px) {
+  .header_conteiner{
+    margin: 0 auto;
+    overflow: hidden;
+    display: flex;
+    justify-content: flex-end;
+    a{
+      font-size: 8px;
+    }
+    p{
+      font-size: 20px;
+    }
+    .header_menu{
+      text-decoration:none;
+      padding: 20px 30px 10px 0px;
+      font-family: Nunito;
+      font-style: normal;
+      font-weight: bold;
+      line-height: 22px;
+      color: #EDF0F5;
+      }
+  }
+  .logo_foto{
+    padding-left: 20px;
+    max-width: 30%;
+  }
+  .content_text_logo{
+    position: relative;
+    left: 20px;
+    z-index: 2;
+  }
+}
+
+/* Iphone 5 */
+@media (max-width: 375px) {
+  .header_conteiner{
+    margin: 0 auto;
+    overflow: hidden;
+    display: flex;
+    justify-content: flex-end;
+    
+    p{
+      font-size: 15px;
+    }
+    .header_menu{
+      text-decoration:none;
+      padding: 20px 30px 10px 0px;
+      font-family: Nunito;
+      font-style: normal;
+      font-weight: bold;
+      line-height: 22px;
+      color: #EDF0F5;
+      }
+  }
+  .logo_foto{
+    padding-left: 4px;
+    max-width: 30%;
+  }
+  .content_text_logo{
+    position: relative;
+    left: 4px;
+    z-index: 2;
+  }
+}
+
 
 
 @media(max-width: 770px){ 
@@ -115,18 +254,25 @@ transform: matrix(-1, 0, 0, 1, 0, 0);
 
 }
 .menu_content{
-  z-index: 1;
   display: none;
 }
 ._active{
-  z-index: 2;
   display: flex;
   flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
   position: fixed;
-  background-color: rgb(199, 61, 61);
+  background: rgba(65, 81, 103, 1);
   width: 100%;
+  height: 300px;
   opacity: 0.8;
-  display: block;
+  z-index: 4;
+  overflow: scroll;
+}
+.width{
+  padding-left: 30px;
+  width: 5%;
+  transform: matrix(-1, 0, 0, 1, 0, 0);
 }
 }
 
@@ -168,7 +314,7 @@ transform: matrix(-1, 0, 0, 1, 0, 0);
   height: 26px;
   right: 30px;
   cursor: pointer;
-  z-index: 1;
+  z-index: 5;
 }
 
 .menu__btn > span,

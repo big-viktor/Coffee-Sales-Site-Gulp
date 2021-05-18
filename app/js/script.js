@@ -1,95 +1,116 @@
-
 const burger = document.getElementById("burger"); 
 const menuContent = document.querySelector('.menu_content')
+// const headerCatalog = document.querySelector('.content_header_catalog')
+const contentSvg = document.querySelector('.basket')
+// const menuBody1 = document.querySelector('.header_a1');
+// const menuBody2 = document.querySelector('.header_a2');
 
 
-if(menuContent){
-    const menuBody = document.querySelector('menu_body');
-    burger.addEventListener("click", function (e) {
-    menuContent.classList.add("_active");
-    menuBody.classList.add("_active");
+let burgers = false;
 
-});
-}
+  const  addSelect = () =>{
+    if(burgers){
+        burgers = false;
+        menuContent.classList.remove("_active");
+        contentSvg.classList.remove("width");   
+    }else {
+        burgers = true;
+        contentSvg.classList.add("width");  
+        menuContent.classList.add("_active");
+    };
+};
+burger.addEventListener("click",addSelect);
+   
 
 
 
-let next = document.getElementById('btn-next');
-let previous = document.getElementById('btn-previous');
-let slider = document.querySelector('.slider_display');
+// if(menuContent){
+//     const menuBody = document.querySelector('menu_body');
+//     burger.addEventListener("click", function (e) {
+//     menuContent.classList.add("_active");
+//     menuBody.classList.add("_active");
+
+// });
+// }
 
 
 
-const sliderBox = [];
+// let next = document.getElementById('btn-next');
+// let previous = document.getElementById('btn-previous');
+// let slider = document.querySelector('.slider_display');
 
- for (let i = 0; i < slider.children.length; i++) {
-      let sliders = slider.children[i];
-        sliderBox.push(sliders);
-    }
-    console.log(sliderBox)
+
+
+// const sliderBox = [];
+
+//  for (let i = 0; i < slider.children.length; i++) {
+//       let sliders = slider.children[i];
+//         sliderBox.push(sliders);
+//     }
+//     console.log(sliderBox)
 
   
-    let index = 0;
-    console.log(index)
+//     let index = 0;
+//     console.log(index)
 
 
-   sliderBox[index];
+//    sliderBox[index];
 
 
-nextSlide = () => {
+// nextSlide = () => {
     
-    if(index === 0){
-        next.classList.remove('active');
-        previous.classList.remove('delet_div');
-        index -1;
-        sliderBox[index++].classList.add('delet_div');
-        // alert('meseg:-1');
-        console.log(sliderBox);
-        console.log(index);
-    }else{
-        // alert('sad')
-        sliderBox[index++].classList.add('delet_div');
-        console.log(sliderBox);
-        console.log(index);
-        if(index === (sliderBox.length -1)){
-            next.classList.add('delet_div');
-            sliderBox[index--];
-            // alert("Last Slide");
-            console.log(sliderBox);
-            console.log(index);
-        }
+//     if(index === 0){
+//         next.classList.remove('active');
+//         previous.classList.remove('delet_div');
+//         index -1;
+//         sliderBox[index++].classList.add('delet_div');
+//         // alert('meseg:-1');
+//         console.log(sliderBox);
+//         console.log(index);
+//     }else{
+//         // alert('sad')
+//         sliderBox[index++].classList.add('delet_div');
+//         console.log(sliderBox);
+//         console.log(index);
+//         if(index === (sliderBox.length -1)){
+//             next.classList.add('delet_div');
+//             sliderBox[index--];
+//             // alert("Last Slide");
+//             console.log(sliderBox);
+//             console.log(index);
+//         }
 
-    }
+//     }
    
-};
+// };
 
-backSlide = () => {
+// backSlide = () => {
     
-    if(index === 0){
-        // alert('dobavim');
-        sliderBox[index--].classList.remove('delet_div');
-        console.log(index);
-        console.log(sliderBox);
-        if(index === -1){
-            // alert("delet-btn-back")
-            previous.classList.add('delet_div');
-            next.classList.add('active');
-            index++;
-        }
-    }else{
-        sliderBox[index--].classList.remove('delet_div');
-        // alert("dobavim +1")
-        next.classList.remove('delet_div');
-        console.log(sliderBox);
-        console.log(index);
-        if(index === -1){
-            // alert("delet-btn-back")
-            previous.classList.add('delet_div');
-            index++;
-        }
-    }
-};
+//     if(index === 0){
+//         // alert('dobavim');
+//         sliderBox[index--].classList.remove('delet_div');
+//         console.log(index);
+//         console.log(sliderBox);
+//         if(index === -1){
+//             // alert("delet-btn-back")
+//             previous.classList.add('delet_div');
+//             next.classList.add('active');
+//             index++;
+//         }
+//     }else{
+//         sliderBox[index--].classList.remove('delet_div');
+//         // alert("dobavim +1")
+//         next.classList.remove('delet_div');
+//         console.log(sliderBox);
+//         console.log(index);
+//         if(index === -1){
+//             // alert("delet-btn-back")
+//             previous.classList.add('delet_div');
+//             index++;
+//         }
+//     }
+// };
 
-next.addEventListener('click', nextSlide);
-previous.addEventListener(('click'), backSlide);
+// next.addEventListener('click', nextSlide);
+// previous.addEventListener(('click'), backSlide);
 
